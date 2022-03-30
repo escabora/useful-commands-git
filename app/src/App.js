@@ -16,8 +16,6 @@ function App() {
             <a href=''>Link 5</a>
             <a href=''>Link 6</a>
             <a href=''>Link 7</a>
-            <a href=''>Link 8 or 9</a>
-            <a href=''>Link 8</a>
           </nav>
         </div>
       </header>
