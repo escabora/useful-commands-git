@@ -237,7 +237,7 @@ Se você já teve algum erro com a sua aplicação depois de alguns commits e n�
 Para iniciar a leitura digite:
 
 ```
-git biset
+git bisect
 ```
 
 Com isso ele te retornará suas opções
