@@ -12,9 +12,7 @@
 
 ### Comando para unir todos os commits em um pr
 
-5 Comando armazenar alterações sem usar branch
-
-- git stash
+### Comando armazenar alterações sem usar branch
 
 6 Renomeando a branch principal para não ter erros
 
@@ -156,10 +154,48 @@ pick 3sw94599 refactor ui
 # Note that empty commits are commented out
 ```
 
-Nesta tela está descrito tudo o que voce pode fazer para a sua fila de commit e aplicando o squash em todos os commits basicamente estará dizendo ao git para unificar todos eles, desta forma:
+Nesta tela está descrito tudo o que você poderá fazer para a sua fila de commit e aplicando o squash em todos os commits basicamente estará dizendo ao git para unificar todos eles, desta forma:
 
 ```
 pick 1as20490 feature completed (ESTE É O COMMIT QUE SERÁ USADO)
 squash 1w032423 refactor box
 squash 3sw94599 refactor ui
 ```
+
+depois é só utilizar o comando:
+
+```
+git push oringin master -f
+```
+
+E pronto seus commits foram unificados
+
+## Comando armazenar alterações sem usar branch
+
+Você já realizou alguma alteração e teve algum receio de publicar em uma branch, as vezes por motivos de vergonha ou até mesmo porque ainda não acha que seja o momento de expor isso ao time? Bom para esse tipo de caso o git tem o comando de [git stash](https://git-scm.com/docs/git-stash)
+
+Primeiro termine sua alteração e digite
+
+```
+git stash pop
+```
+
+Automaticamente o git irá salvar essa alteração sem publicar na branch e para resgalar a qualquer momento ee só digitar
+
+```
+git stash save yourNameSave
+```
+
+Após isso você pode listar suas stashs assim:
+
+```
+git stash list
+```
+
+E para utilizar a stash basta apenas digitar:
+
+```
+git stash aplly yourNameSave
+```
+
+Após isso é só mandar o push para branch.
