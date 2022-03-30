@@ -15,6 +15,7 @@ function App() {
             <a href=''>Link 4</a>
             <a href=''>Link 5</a>
             <a href=''>Link 6</a>
+            <a href=''>Link 6</a>
           </nav>
         </div>
       </header>
