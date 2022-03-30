@@ -22,7 +22,7 @@
 
 ### Abrindo um repo na web
 
-### Comparando Branchs
+### [Comparando Branchs](#comparando-branchs-1)
 
 ### Comando para descobrir bugs na aplicação
 
@@ -242,5 +242,6 @@ Este é muito simples. Apenas aperte "." em qualquer repositório na web no gith
 Você já teve o problema de precisar analisar dois códigos que foram refatoras para entender o que aconteceu? Pois é quando o código é pequeno tudo bem, agora quando é gigante ai ta o problema, bom para esses casos o github tem o [github compare](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits)
 Ele nada mais faz que criar uma ramificação temporária para analisar duas branchs com vários commits.
 
-Comando para descobrir bugs na aplicação
+## Comando para descobrir bugs na aplicação
+
 git biset
