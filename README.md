@@ -1,30 +1,18 @@
 # Comandos (úteis) que vão salvar sua vida no git
 
-### Dando push com apenas 2 códigos
-
-### Ajustando a descrição do último commit publicado
-
-### Comando Reverter um commit da árvore
-
-### Comando para duplicar um commit
-
-### Logando histórico no terminal
-
-### Comando para unir todos os commits em um pr
-
-### Comando armazenar alterações sem usar branch
-
-### Comando para resetar a master para o estado inicial do repositório
-
-### Comando para excluir commit
-
-### Comando para voltar a ramificação anterior
-
-### Abrindo um repo na web
-
-### [Comparando Branchs](#comparando-branchs-1)
-
-### Comando para descobrir bugs na aplicação
+- [Dando push com apenas 2 códigos](#dando-push-com-apenas-2-códigos-1)
+- [Ajustando a descrição do último commit publicado](#ajustando-a-descrição-do-último-commit-publicado-1)
+- [Comando Reverter um commit da árvore](#comando-reverter-um-commit-da-árvore-1)
+- [Comando para duplicar um commit](#comando-para-duplicar-um-commit-1)
+- [Logando histórico no terminal](#logando-histórico-no-terminal-1)
+- [Comando para unir todos os commits em um pr](#comando-para-unir-todos-os-commits-em-um-pr-1)
+- [Comando armazenar alterações sem usar branch](#comando-armazenar-alterações-sem-usar-branch-1)
+- [Comando para resetar a master para o estado inicial do repositório](#comando-para-resetar-a-master-para-o-estado-inicial-do-repositório-1)
+- [Comando para excluir commit](#comando-para-excluir-commit-1)
+- [Comando para voltar a ramificação anterior](#comando-para-voltar-a-ramificação-anterior-1)
+- [Abrindo um repo na web](#abrindo-um-repo-na-web-1)
+- [Comparando Branchs](#comparando-branchs-1)
+- [Comando para descobrir bugs na aplicação](#comando-para-descobrir-bugs-na-aplicação-1)
 
 # Vámos la
 
@@ -244,4 +232,37 @@ Ele nada mais faz que criar uma ramificação temporária para analisar duas bra
 
 ## Comando para descobrir bugs na aplicação
 
+Se você já teve algum erro com a sua aplicação depois de alguns commits e não sabe qual foi. Esse código pode te ajudar. Basicamente o github realiza uma busca binária para dizer se o commit está bom ou ruim e com isso o git vai fechando até encontrar qual commit inseriu o erro.
+
+Para iniciar a leitura digite:
+
+```
 git biset
+```
+
+Com isso ele te retornará suas opções
+
+```
+usage: git bisect [help|start|bad|good|new|old|terms|skip|next|reset|visualize|view|replay|log|run]
+```
+
+Depois iniciar a analise digitando:
+
+```
+git biset start
+```
+
+Neste momento o github te apresentará o commit atual e com ele você dira ao github se aquele commit está bom ou ruim, se o commit tiver ruim (aplicação continua quebrada) digite:
+
+```
+git biset bed
+```
+
+Logo após o git irá executando um rollback de commit à commit na sua árvore até que você diga para ele que o commit que ele está é de fato um commit sem erro, digitando:
+
+```
+git biset good
+```
+
+Neste momento o github irá descrever a quantidade de revisões necessárias para encontrar o commit com erro. E a cada linha você irá dizer se aquele comiit está como `git biset bed` ou `git biset good`.
+No final ele irá exibir didaticamente o commit que lhe causou o erro.
