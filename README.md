@@ -1,18 +1,18 @@
 # Comandos (úteis) que vão salvar sua vida no git
 
-- [Dando push com apenas 2 códigos](#dando-push-com-apenas-2-códigos-1)
-- [Ajustando a descrição do último commit publicado](#ajustando-a-descrição-do-último-commit-publicado-1)
-- [Comando Reverter um commit da árvore](#comando-reverter-um-commit-da-árvore-1)
-- [Comando para duplicar um commit](#comando-para-duplicar-um-commit-1)
-- [Logando histórico no terminal](#logando-histórico-no-terminal-1)
-- [Comando para unir todos os commits em um pr](#comando-para-unir-todos-os-commits-em-um-pr-1)
-- [Comando armazenar alterações sem usar branch](#comando-armazenar-alterações-sem-usar-branch-1)
-- [Comando para resetar a master para o estado inicial do repositório](#comando-para-resetar-a-master-para-o-estado-inicial-do-repositório-1)
-- [Comando para excluir commit](#comando-para-excluir-commit-1)
-- [Comando para voltar a ramificação anterior](#comando-para-voltar-a-ramificação-anterior-1)
-- [Abrindo um repo na web](#abrindo-um-repo-na-web-1)
-- [Comparando Branchs](#comparando-branchs-1)
-- [Comando para descobrir bugs na aplicação](#comando-para-descobrir-bugs-na-aplicação-1)
+- [Dando push com apenas 2 códigos](#dando-push-com-apenas-2-códigos)
+- [Ajustando a descrição do último commit publicado](#ajustando-a-descrição-do-último-commit-publicado)
+- [Comando Reverter um commit da árvore](#comando-reverter-um-commit-da-árvore)
+- [Comando para duplicar um commit](#comando-para-duplicar-um-commit)
+- [Logando histórico no terminal](#logando-histórico-no-terminal)
+- [Comando para unir todos os commits em um pr](#comando-para-unir-todos-os-commits-em-um-pr)
+- [Comando armazenar alterações sem usar branch](#comando-armazenar-alterações-sem-usar-branch)
+- [Comando para resetar a master para o estado inicial do repositório](#comando-para-resetar-a-master-para-o-estado-inicial-do-repositório)
+- [Comando para excluir commit](#comando-para-excluir-commit)
+- [Comando para voltar a ramificação anterior](#comando-para-voltar-a-ramificação-anterior)
+- [Abrindo um repo na web](#abrindo-um-repo-na-web)
+- [Comparando Branchs](#comparando-branchs)
+- [Comando para descobrir bugs na aplicação](#comando-para-descobrir-bugs-na-aplicação)
 
 # Vámos la
 
