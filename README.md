@@ -16,9 +16,7 @@
 
 ### Comando para resetar a master para o estado inicial do repositório
 
-13 Comando para excluir commit
-
-- git reset --hard HEAD~1
+### Comando para excluir commit
 
 9 Comando para descobrir bugs na aplicação
 
@@ -207,3 +205,14 @@ se sobre algum arquivo que precise esxcluir apenas use:
 ```
 git clean -df
 ```
+
+## Comando para excluir commit
+
+Esse comando requer muita atenção e certeza do que está faznedo uma vez realizado não poderá voltar a exclusão.
+Para executar a exclusão do último commit, basta escrever:
+
+```
+git reset --hard HEAD~1
+```
+
+Primeiro, o github trabalha com ramificações e commits e a declaração de HEAD significa que é a ramificação (branch) atual já o "~" significa a "até" do commit e o número a posição do commit. Traduzindo: exclua sem questionamento da branch que estou os commits até 1.
