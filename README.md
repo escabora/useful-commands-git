@@ -255,7 +255,7 @@ git bisect start
 Neste momento o github te apresentará o commit atual e com ele você dira ao github se aquele commit está bom ou ruim, se o commit tiver ruim (aplicação continua quebrada) digite:
 
 ```
-git bisect bed
+git bisect bad
 ```
 
 Logo após o git irá executando um rollback de commit à commit na sua árvore até que você diga para ele que o commit que ele está é de fato um commit sem erro, digitando:
@@ -264,5 +264,5 @@ Logo após o git irá executando um rollback de commit à commit na sua árvore 
 git bisect good
 ```
 
-Neste momento o github irá descrever a quantidade de revisões necessárias para encontrar o commit com erro. E a cada linha você irá dizer se aquele comiit está como `git bisect bed` ou `git bisect good`.
+Neste momento o github irá descrever a quantidade de revisões necessárias para encontrar o commit com erro. E a cada linha você irá dizer se aquele comiit está como `git bisect bad` ou `git bisect good`.
 No final ele irá exibir didaticamente o commit que lhe causou o erro.
