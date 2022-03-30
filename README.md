@@ -249,20 +249,20 @@ usage: git bisect [help|start|bad|good|new|old|terms|skip|next|reset|visualize|v
 Depois iniciar a analise digitando:
 
 ```
-git biset start
+git bisect start
 ```
 
 Neste momento o github te apresentará o commit atual e com ele você dira ao github se aquele commit está bom ou ruim, se o commit tiver ruim (aplicação continua quebrada) digite:
 
 ```
-git biset bed
+git bisect bed
 ```
 
 Logo após o git irá executando um rollback de commit à commit na sua árvore até que você diga para ele que o commit que ele está é de fato um commit sem erro, digitando:
 
 ```
-git biset good
+git bisect good
 ```
 
-Neste momento o github irá descrever a quantidade de revisões necessárias para encontrar o commit com erro. E a cada linha você irá dizer se aquele comiit está como `git biset bed` ou `git biset good`.
+Neste momento o github irá descrever a quantidade de revisões necessárias para encontrar o commit com erro. E a cada linha você irá dizer se aquele comiit está como `git bisect bed` ou `git bisect good`.
 No final ele irá exibir didaticamente o commit que lhe causou o erro.
