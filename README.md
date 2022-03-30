@@ -14,9 +14,7 @@
 
 ### Comando armazenar alterações sem usar branch
 
-6 Renomeando a branch principal para não ter erros
-
-- git branch -M nameBranch
+### Comando para renomear a branch principal para não ter erros
 
 9 Comando para descobrir bugs na aplicação
 
@@ -177,7 +175,7 @@ Você já realizou alguma alteração e teve algum receio de publicar em uma bra
 Primeiro termine sua alteração e digite
 
 ```
-git stash pop
+git stash
 ```
 
 Automaticamente o git irá salvar essa alteração sem publicar na branch e para resgalar a qualquer momento ee só digitar
@@ -199,3 +197,11 @@ git stash aplly yourNameSave
 ```
 
 Após isso é só mandar o push para branch.
+
+## Comando para renomear a branch principal para não ter erros
+
+Você já teve o leve problema de usar por muito tempo o nome de suas branchs principais sendo master e no ano de 2020 por algum motivo esse nome passou a ser main ou mega? E ainda pior seus commits passaram a ser prejudicialmente afetados pois você tinha a leve mania de escrever `git push origin master` bom seus problemas acabaram lhes apresento o comando para renomear branch apenas local
+
+```
+git branch -M nameBranch
+```
