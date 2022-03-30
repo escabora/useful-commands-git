@@ -21,7 +21,7 @@
 código que irá utilizar:
 
 ```
-git commit -am "simples assim!"
+git commit -am "that simple!"
 ```
 
 Você também pode configurar um alias que irá auxiliar ainda mais a escrita de código, primeiro cofigure seu alias:
