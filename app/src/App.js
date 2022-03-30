@@ -7,7 +7,7 @@ function App() {
     <div className='App'>
       <header className='App-header'>
         <div class='content'>
-          <img src={logo} className='App-logo' alt='logo' />
+          <img src={logo} className='App-logo logo-inner' alt='logo' />
           <nav>
             <a href=''>Link 1</a>
             <a href=''>Link 2</a>
