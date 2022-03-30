@@ -14,15 +14,15 @@
 
 ### Comando armazenar alterações sem usar branch
 
-### Comando para renomear a branch principal para não ter erros
+### Comando para resetar a master para o estado inicial do repositório
+
+13 Comando para excluir commit
+
+- git reset --hard HEAD~1
 
 9 Comando para descobrir bugs na aplicação
 
 - git biset
-
-10 Comando para resetar a master para o estado inicial do repositório
-
-- git reset --hard origin/master | git clean -df
 
 11 Comando para voltar a ramificação anterior
 
@@ -31,10 +31,6 @@
 12 Abrindo um repo na web
 
 - apertar . | terminal funciona normalmente para - alterar as informações
-
-13 Comando para excluir commit
-
-- git reset --hard HEAD~1
 
 ## Dando push com apenas 2 códigos
 
@@ -198,10 +194,16 @@ git stash aplly yourNameSave
 
 Após isso é só mandar o push para branch.
 
-## Comando para renomear a branch principal para não ter erros
+## Comando para resetar a master para o estado inicial do repositório
 
-Você já teve o leve problema de usar por muito tempo o nome de suas branchs principais sendo master e no ano de 2020 por algum motivo esse nome passou a ser main ou mega? E ainda pior seus commits passaram a ser prejudicialmente afetados pois você tinha a leve mania de escrever `git push origin master` bom seus problemas acabaram lhes apresento o comando para renomear branch apenas local
+Sabe quando você faz algo que não sabe o que fez e precisa urgente voltar a master para seu estado inicial, ou seja o estado do commit atual do publicado no repo:
 
 ```
-git branch -M nameBranch
+git reset --hard origin/master
+```
+
+se sobre algum arquivo que precise esxcluir apenas use:
+
+```
+git clean -df
 ```
