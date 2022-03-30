@@ -1,4 +1,4 @@
-<h2 align="center">13 comandos (úteis) que vão salvar sua vida no git</h2>
+# Comandos (úteis) que vão salvar sua vida no git
 
 ### Dando push com apenas 2 códigos
 
@@ -18,17 +18,15 @@
 
 ### Comando para excluir commit
 
-9 Comando para descobrir bugs na aplicação
+### Comando para voltar a ramificação anterior
 
-- git biset
+### Abrindo um repo na web
 
-11 Comando para voltar a ramificação anterior
+### Comparando Branchs
 
-- git checkout -
+### Comando para descobrir bugs na aplicação
 
-12 Abrindo um repo na web
-
-- apertar . | terminal funciona normalmente para - alterar as informações
+# Vámos la
 
 ## Dando push com apenas 2 códigos
 
@@ -216,3 +214,33 @@ git reset --hard HEAD~1
 ```
 
 Primeiro, o github trabalha com ramificações e commits e a declaração de HEAD significa que é a ramificação (branch) atual já o "~" significa a "até" do commit e o número a posição do commit. Traduzindo: exclua sem questionamento da branch que estou os commits até 1.
+
+Quanto mais adições, mais commits ele irá excluir, excluindo os últimos dois commits da master.
+
+```
+git reset --hard HEAD~2
+```
+
+Exclua sem questionamento da branch que estou os commits até 2.
+
+## Comando para voltar a ramificação anterior
+
+Você já criou uma branch depois foi para a master e precisou voltar para sua branch e se esqueceu o nome e teve a maior dor de cabeça? Pois, o comando abaixo é para você:
+
+```
+git checkout -
+```
+
+Este comando sempre irá voltar a branch anterior que você estava.
+
+### Abrindo um repo na web
+
+Este é muito simples. Apenas aperte "." em qualquer repositório na web no github e ele irá virar um visual studio code, o mais legal é que você pode abrir o terminal e escrever sem problema algum, inclusive commitar seus projetos.
+
+### Comparando Branchs
+
+Você já teve o problema de precisar analisar dois códigos que foram refatoras para entender o que aconteceu? Pois é quando o código é pequeno tudo bem, agora quando é gigante ai ta o problema, bom para esses casos o github tem o [github compare](https://docs.github.com/pt/pull-requests/committing-changes-to-your-project/viewing-and-comparing-commits/comparing-commits)
+Ele nada mais faz que criar uma ramificação temporária para analisar duas branchs com vários commits.
+
+Comando para descobrir bugs na aplicação
+git biset
