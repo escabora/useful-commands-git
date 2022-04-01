@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import { mock } from './mock';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    console.log('aqui no render');
+  }, []);
   return (
     <div className='App'>
       <header className='App-header'>
