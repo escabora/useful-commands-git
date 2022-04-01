@@ -43,6 +43,9 @@ function App() {
             <a href='' onClick={(ev) => handleClick(ev)}>
               Link 7
             </a>
+            <a href='' onClick={(ev) => handleClick(ev)}>
+              Link 7
+            </a>
           </nav>
         </div>
       </header>
