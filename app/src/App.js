@@ -2,9 +2,11 @@ import logo from './logo.svg';
 import { mock } from './mock';
 import './App.css';
 import { useEffect } from 'react';
+import { DefineColor } from './hooks';
 
 function App() {
   useEffect(() => {
+    DefineColor({ color: '#000' });
     console.log('aqui no render');
   }, []);
   const handleClick = (ev) => {
