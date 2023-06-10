@@ -1,4 +1,4 @@
-# (useful) commands that will save your git life
+# useful commands that will save your git life
 
 - [Pushing with only 2 codes](#pushing-with-only-2-codes)
 - [Adjusting the description of the last published commit](#adjusting-the-description-of-the-last-published-commit)
