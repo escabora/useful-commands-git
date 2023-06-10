@@ -1,0 +1,15 @@
+{
+  "name": "useful-commands-git",
+  "description": "This is an article to help developers understand git commands. I gathered the most used and explicit commands in a simple way to use them",
+  "author": "Gabriel Escabora <gabrielescabora@gmail.com>",
+  "version": "1.0.0",
+  "repository": "git@github.com:escabora/useful-commands-git.git",
+  "license": "MIT",
+  "keywords": [
+    "git-commands",
+    "commands",
+    "useful-commands"
+  ],
+  "dependencies": {
+  }
+}
